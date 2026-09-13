@@ -1,0 +1,129 @@
+{
+  "project_info": {
+    "title": "Ilya Daniliuk - Senior Business Development & Technology Portfolio",
+    "persona": "E1 - The Anti-AI Designer",
+    "target_roles": [
+      "Business Development Manager in technology",
+      "IT / Cloud / Cybersecurity Sales Executive",
+      "Technology Account Manager",
+      "SaaS Business Development Manager",
+      "Technology Partnerships Leader"
+    ],
+    "app_type": "portfolio",
+    "language_framework": "React js (.js / .jsx), Tailwind CSS, Shadcn UI primitives, Framer Motion, Lucide Icons"
+  },
+  "theme": {
+    "mode": "dark-dominant-luxury",
+    "vibe": "Executive Tech Leader, Confident, Intelligent, High-Precision",
+    "description": "Obsidian & Deep Graphite foundation (#090D16) paired with Alabaster text (#F8FAFC), crisp 1px borders (#1E293B), Electric Cobalt accent (#3B82F6), and subtle Emerald gain indicators (#10B981). Clean typography, generous padding, zero clutter."
+  },
+  "typography": {
+    "heading_font": "Cabinet Grotesk / Plus Jakarta Sans / Outfit",
+    "body_font": "Inter / System Sans",
+    "mono_font": "JetBrains Mono / Fira Code",
+    "rules": [
+      "DO NOT use Inter for main headings. Use display/sans fonts like Plus Jakarta Sans or Outfit with tracking-tight.",
+      "H1 (Hero Heading): text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight. Ceiling is text-6xl.",
+      "H2 (Section Heading): text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight",
+      "H3 (Subsection Heading): text-xl sm:text-2xl font-medium",
+      "Body: text-base text-slate-300 leading-relaxed",
+      "Labels & Tags: text-xs uppercase tracking-[0.2em] text-slate-400 font-mono"
+    ]
+  },
+  "colors": {
+    "background": "#080C14",
+    "surface": "#0F172A",
+    "surface_hover": "#1E293B",
+    "border": "#1E293B",
+    "border_highlight": "#334155",
+    "primary": "#3B82F6",
+    "primary_hover": "#2563EB",
+    "primary_glow": "rgba(59, 130, 246, 0.15)",
+    "emerald_accent": "#10B981",
+    "text_primary": "#F8FAFC",
+    "text_secondary": "#94A3B8",
+    "text_muted": "#64748B"
+  },
+  "media_assets": {
+    "profile_photo": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "project_previews": [
+      {
+        "id": "finops-cloud-optimizer",
+        "title": "Cloud FinOps & Infrastructure Cost Optimizer",
+        "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&q=85"
+      },
+      {
+        "id": "enterprise-ai-pipeline",
+        "title": "Enterprise AI Pipeline Predictor & Lead Intelligence",
+        "image_url": "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?crop=entropy&cs=srgb&fm=jpg&q=85"
+      },
+      {
+        "id": "cloud-sec-audit",
+        "title": "Multi-Cloud Security & Compliance Audit Platform",
+        "image_url": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?crop=entropy&cs=srgb&fm=jpg&q=85"
+      },
+      {
+        "id": "saas-integration-hub",
+        "title": "B2B SaaS Ecosystem Integration & Partner Portal",
+        "image_url": "https://images.unsplash.com/photo-1686061594225-3e92c0cd51b0?crop=entropy&cs=srgb&fm=jpg&q=85"
+      }
+    ]
+  },
+  "structure_and_components": {
+    "central_data_config": "All portfolio information (bio, skills, projects, certifications, work timeline, social links) MUST reside in /app/frontend/src/constants/portfolioData.js for zero-code updates.",
+    "sections": [
+      {
+        "id": "header",
+        "component": "NavigationHeader",
+        "description": "Sticky floating navigation bar with backdrop-blur-md bg-slate-950/80, 1px bottom border, brand logo 'Ilya Daniliuk', nav links (Home, About, Core Value, Projects, Certifications, Experience, Contact), CTAs 'Download CV' and 'Get in Touch'."
+      },
+      {
+        "id": "hero",
+        "component": "HeroSection",
+        "description": "Bold executive landing banner. Includes Ilya Daniliuk's name, professional headline ('Business Development Manager | Cloud, SaaS & Technology Partnerships'), 2-3 line value proposition, primary CTAs ('View Projects' + 'Download CV' modal trigger), social links (LinkedIn, GitHub, Email), and a executive metric grid ($12M+ ARR Pipeline, Multi-Cloud Certified, 15+ Enterprise Deals)."
+      },
+      {
+        "id": "about",
+        "component": "AboutSection",
+        "description": "Executive bio connecting commercial deal-making with technical/cloud hands-on experience. Highlighting customer trust, C-level stakeholder alignment, and modern software/AI background with interactive highlight cards."
+      },
+      {
+        "id": "expertise",
+        "component": "CoreExpertiseSection",
+        "description": "3-column structured grid grouping competencies into: 1. Commercial & Business Development, 2. Technology & Cloud Architecture, 3. Business Transformation & Problem Solving. Each group features detailed bullet points and visual badges."
+      },
+      {
+        "id": "projects",
+        "component": "FeaturedProjectsSection",
+        "description": "Bento-style project cards displaying screenshot preview, summary, problem statement, what was built, tech stack pills, commercial impact, GitHub links, and a 'Deep-Dive Case Study' button that opens a comprehensive Shadcn Dialog Modal."
+      },
+      {
+        "id": "certifications",
+        "component": "CertificationsSection",
+        "description": "Cards grouped logically by issuer (AWS, Microsoft Azure, Google Cloud, Security & Agile). Displays certification title, issuer, date earned, credential ID, direct verification link button, and core skills validated."
+      },
+      {
+        "id": "experience",
+        "component": "ExperienceSection",
+        "description": "Vertical interactive timeline showing career history, roles, companies, dates, and 2-3 metric-driven achievements per role with expandable details."
+      },
+      {
+        "id": "contact",
+        "component": "ContactSection",
+        "description": "Contact panel featuring direct LinkedIn, GitHub, Email links, meeting scheduler CTA, and a responsive contact form with input validation and Sonner toast notification on submission."
+      },
+      {
+        "id": "footer",
+        "component": "FooterSection",
+        "description": "Minimalist footer with copyright, navigation quick links, smooth scroll 'Back to Top' button, and open graph/metadata setup."
+      }
+    ]
+  },
+  "general_ui_ux_guidelines": {
+    "spacing": "Generous spacing philosophy (py-20 lg:py-28 for main sections, gap-8 to gap-12 in grids).",
+    "testing_attributes": "EVERY interactive element (buttons, links, form inputs, modal triggers, tab buttons, social links) MUST include explicit data-testid attributes (e.g. data-testid='hero-download-cv-button', data-testid='nav-link-projects', data-testid='contact-form-submit-button').",
+    "animations": "Subtle entrance animations using Framer Motion (fade-up, staggerChildren). Micro-hover state transitions on cards (translate-y-1, border-highlight glow). Exclude transform from universal transition css rules.",
+    "accessibility": "High contrast text (WCAG AA compliant), clear focus-visible rings (ring-2 ring-blue-500), ARIA labels on social links and icon buttons.",
+    "modals_and_toasts": "Use Shadcn Dialog component for project case-study details and CV view/download modal. Use Sonner for contact form submission toasts."
+  }
+}
