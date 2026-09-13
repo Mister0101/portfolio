@@ -37,3 +37,11 @@ Sticky nav (Home/About/Projects/Certifications/Experience/Contact) with smooth s
 - P1: Regenerate CV PDF including phone number if user wants it (edit make_cv_pdf.py)
 - P2: Optional profile photo (user said no generic stock imagery — needs a real photo)
 - P2: Custom domain + deployment when ready
+
+## Vercel Export (done 13 Sep session)
+- Stripped Emergent platform scripts (emergent-main.js, PostHog, error handler) from public/index.html
+- Added /app/frontend/vercel.json (create-react-app framework, yarn build, output build/, SPA rewrite)
+- Production build verified: `yarn build` compiles successfully in ~27s, CV PDF included in build/
+- Deploy steps: push to GitHub (Save → Save to GitHub, paid plan) → import repo in Vercel → set Root Directory = `frontend` (vercel.json handles the rest)
+- TODO after deploy: update og:url in public/index.html from the Emergent preview URL to the Vercel domain
+- No env vars needed on Vercel (site reads none)
